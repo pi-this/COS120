@@ -1,3 +1,21 @@
+def remove_duplicate(string):
+    result = ""
+    for char in string:
+        if not char in result:
+            result += char
+    
+    
+    return result
+
+
+def remove_matches(string, password):
+    pass
+"""
+>>> remove_duplicate("yeerss")
+'yers'
+"""
+
+
 # Challenge:
 # CEASAR CIPHER
 # only letters...
@@ -127,3 +145,10 @@ def remove_spaces(text):
     return result
 
 #print(remove_spaces("There should be no spaces in this string."))
+
+"""
+1. remove all duplicates = topsecr
+2. split alphabet
+3. remove all letters from password
+4. combine password + lower half + upper -> key
+"""
